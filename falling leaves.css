@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box ;
-    font-family:'Popins' , sans-serif;
+    font-family: 'Montserrat', sans-serif;
 } 
 
 
@@ -17,6 +17,9 @@ li, a {
     text-decoration: none;
 }
 
+nav {
+    
+}
 header{
     display: flex;
     justify-content:space-between;
@@ -26,7 +29,7 @@ header{
     position: relative;
 }
 section{
-    position:relative ;
+    position:absolute ;
     width:100%;
     height:100vh;
     background:linear-gradient( #333, #000);
@@ -36,10 +39,13 @@ section{
     align-items:center;
 }
 section h2{
+    padding: 10px;
     color:#fff;
-    font-size:2em;
-    text-transform:uppercase ;
-    text-shadow:0 1px 4px red;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    font-weight: 300px;
+    font-size:60px;
+    text-shadow:0 1px 4px rgb(211, 13, 13);
 }
 section .set{
     position:absolute ;
@@ -160,4 +166,74 @@ section .set div:nth-child(8){
 
 #transparent {
     position: absolute;
+
 }
+
+#fadein1 {
+    opacity:0;
+    animation:fadeIn 1.5s forwards;
+
+
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+#fadein2 {
+    opacity:0;
+    animation:fadeinner 1.5s forwards;
+    animation-delay: 1.5    s;
+
+}
+
+@keyframes fadeinner {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+
+#H3text {
+    color: #edf0f1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 250px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    z-index: 1;
+    text-shadow:0 1px 4px rgb(211, 13, 13);
+    text-indent: 50px;
+
+}
+#scheduleText{
+    color: #edf0f1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200px;
+    font-size: 25px;
+    text-align: justify;
+    text-align: left;
+    margin-left: 130px;
+    margin-right: 130px;
+    z-index: 1;
+    text-shadow:0 1px 4px rgb(211, 13, 13);
+    text-align-last: left;
+    text-indent: 50px;
+}
+
+b {
+    text-decoration: underline;
+}
+
